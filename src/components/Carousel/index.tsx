@@ -4,6 +4,7 @@ import 'swiper/swiper-bundle.css';
 
 import { carouselImages } from '../../data/carouselImages';
 import * as S from './styles';
+import { Container } from '../../styles/Container';
 
 export function Carousel() {
   return (
@@ -20,8 +21,10 @@ export function Carousel() {
             <SwiperSlide key={idx}>
               <S.Image src={img.src} alt={`Slide ${idx}`} />
               <S.Overlay>
-                <h2>{img.title}</h2>
-                <p>{img.description}</p>
+                <Container>
+                  <h2>{img.title}</h2>
+                  <p>{img.description}</p>
+                </Container>
               </S.Overlay>
             </SwiperSlide>
           ))}

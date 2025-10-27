@@ -3,6 +3,8 @@ import { useEffect, useState } from 'react';
 import { GlobalStyle } from './styles/GlobalStyle';
 import { Header } from './components/Header';
 import { Carousel } from './components/Carousel';
+import { AboutSection } from './components/About_Section';
+import { Footer } from './components/Footer';
 
 function App() {
   const [scrolled, setScrolled] = useState(false);
@@ -23,6 +25,8 @@ function App() {
       <GlobalStyle />
       <Header scrolled={scrolled} />
       <Carousel />
+      <AboutSection />
+      <Footer />
     </>
   );
 }
