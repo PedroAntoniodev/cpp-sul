@@ -11,12 +11,11 @@ export const CarouselContainer = styled.div`
   overflow: hidden;
   box-shadow: 0 5px 32px -5px #046c3c20;
   position: relative;
-  margin-bottom: 32px;
 `;
 
 export const Image = styled.img`
   width: 100%;
-  height: 760px;
+  height: 600px;
   object-fit: cover;
 `;
 
