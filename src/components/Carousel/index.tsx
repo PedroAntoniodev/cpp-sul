@@ -6,7 +6,7 @@ import { carouselImages } from '../../data/carouselImages';
 import * as S from './styles';
 import { Container } from '../../styles/Container';
 
-export function Carousel() {
+const Carousel = () => {
   return (
     <S.CarouselOuter>
       <S.CarouselContainer>
@@ -32,4 +32,6 @@ export function Carousel() {
       </S.CarouselContainer>
     </S.CarouselOuter>
   );
-}
+};
+
+export default Carousel;

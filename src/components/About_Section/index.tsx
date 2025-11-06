@@ -1,11 +1,13 @@
+import { SectionTitle } from '../../styles/GlobalStyle';
 import { Container } from '../../styles/Container';
+
 import * as S from './styles';
 
-export function AboutSection() {
+const AboutSection = () => {
   return (
     <S.AboutSection>
-      <Container style={{ textAlign: 'center' }}>
-        <S.SectionTitle>Quem Somos</S.SectionTitle>
+      <Container>
+        <SectionTitle>Quem Somos</SectionTitle>
         <S.FeatureRow>
           <S.Img
             src="https://img.freepik.com/fotos-premium/silhueta-de-pescadores-usando-ferramentas-de-pesca-e-durante-o-sol-dourado-brilha_29392-278.jpg"
@@ -39,4 +41,6 @@ export function AboutSection() {
       </Container>
     </S.AboutSection>
   );
-}
+};
+
+export default AboutSection;

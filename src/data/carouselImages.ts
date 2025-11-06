@@ -5,7 +5,7 @@ export const carouselImages = [
     description: 'Botos pescadores impulsionam turismo em Laguna',
   },
   {
-    src: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/ac/5a/de/vista-da-prainha-chegando.jpg?w=1200&h=-1&s=1',
+    src: 'https://img.freepik.com/fotos-gratis/praia-com-coqueiro-ao-por-do-sol_268835-4049.jpg?semt=ais_hybrid&w=740&q=80',
     title: 'Praia de Laguna',
     description: 'Praia de Laguna Teste',
   },
