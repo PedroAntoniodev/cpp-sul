@@ -16,9 +16,8 @@ export const projects = [
   {
     id: 'projeto-2',
     title: 'Projeto 2',
-    primaryImage:
-      'https://cppnacional.org.br/sites/default/files/WhatsApp-Image-2025-09-20-at-3.38.30-PM.jpeg',
-    image2: imageTest2,
+    primaryImage: imageTest1,
+    image2: imageTest1,
     image3: imageTest2,
     primaryDescription:
       'Descrição do projeto 2, teste teste vamos la lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, consequuntur! Quae, consequuntur! Quae, consequun',
