@@ -1,13 +1,14 @@
 import * as S from './styles';
 
-import ImgLogo from '../../assets/images/logo_cpp.png';
+import ImgLogo from '../../assets/images/logo_cpp_footer.png';
 import { Container } from '../../styles/Container';
+import { Link } from 'react-router';
 
 type Props = {
   scrolled: boolean;
 };
 
-export function Header({ scrolled }: Props) {
+const Header = ({ scrolled }: Props) => {
   return (
     <S.HeaderContainer scrolled={scrolled}>
       <Container
@@ -17,7 +18,9 @@ export function Header({ scrolled }: Props) {
           justifyContent: 'space-between',
         }}
       >
-        <S.Logo src={ImgLogo} alt="logo CPP" scrolled={scrolled}></S.Logo>
+        <Link to="/">
+          <S.Logo src={ImgLogo} alt="logo CPP" scrolled={scrolled}></S.Logo>
+        </Link>
         <S.Nav>
           <a href="#projetos">Projetos</a>
           <a href="#sobre">Sobre</a>
@@ -26,4 +29,6 @@ export function Header({ scrolled }: Props) {
       </Container>
     </S.HeaderContainer>
   );
-}
+};
+
+export default Header;

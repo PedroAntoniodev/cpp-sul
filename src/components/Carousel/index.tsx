@@ -6,7 +6,7 @@ import { carouselImages } from '../../data/carouselImages';
 import * as S from './styles';
 import { Container } from '../../styles/Container';
 
-export function Carousel() {
+const Carousel = () => {
   return (
     <S.CarouselOuter>
       <S.CarouselContainer>
@@ -21,7 +21,7 @@ export function Carousel() {
             <SwiperSlide key={idx}>
               <S.Image src={img.src} alt={`Slide ${idx}`} />
               <S.Overlay>
-                <Container>
+                <Container style={{ textAlign: 'left' }}>
                   <h2>{img.title}</h2>
                   <p>{img.description}</p>
                 </Container>
@@ -32,4 +32,6 @@ export function Carousel() {
       </S.CarouselContainer>
     </S.CarouselOuter>
   );
-}
+};
+
+export default Carousel;

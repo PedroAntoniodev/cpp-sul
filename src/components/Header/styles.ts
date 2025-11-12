@@ -19,7 +19,7 @@ export const HeaderContainer = styled.header<Props>`
 `;
 
 export const Logo = styled.img<Props>`
-  height: ${(props) => (props.scrolled ? '80px' : '60px')};
+  height: ${(props) => (props.scrolled ? '64px' : '80px')};
   cursor: pointer;
   margin: 16px;
   transition: height 0.3s ease-in-out;

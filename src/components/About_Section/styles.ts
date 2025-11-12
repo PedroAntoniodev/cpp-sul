@@ -1,17 +1,7 @@
 import styled from 'styled-components';
-import { Colors } from '../../styles/GlobalStyle';
 
 export const AboutSection = styled.section`
   padding: 32px 0;
-  background-color: ${Colors.white};
-`;
-
-export const SectionTitle = styled.h2`
-  color: ${Colors.blue2};
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 80px;
-  margin-top: 48px;
-  margin-bottom: 64px;
 `;
 
 export const FeatureRow = styled.div<{ reverse?: boolean }>`
