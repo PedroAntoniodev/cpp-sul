@@ -35,6 +35,7 @@ export const ImageTextSection = styled.section`
   img {
     width: 50%;
     object-fit: cover;
+    height: 400px;
     border-radius: 12px;
   }
 `;
