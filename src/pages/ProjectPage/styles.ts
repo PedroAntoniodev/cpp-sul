@@ -13,13 +13,28 @@ export const Title = styled.h1`
 `;
 
 export const Image = styled.img`
-  height: 400px;
+  height: 600px;
   border-radius: 16px;
   margin-bottom: 32px;
 `;
 
 export const Description = styled.p`
   color: ${Colors.black};
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.6;
+  margin-bottom: 32px;
+`;
+
+export const ImageTextSection = styled.section`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  padding: 32px 16px;
+
+  img {
+    width: 50%;
+    object-fit: cover;
+    border-radius: 12px;
+  }
 `;

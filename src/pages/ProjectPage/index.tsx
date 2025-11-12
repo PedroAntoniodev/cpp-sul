@@ -22,8 +22,15 @@ const ProjectTemplate = () => {
       <Container>
         <S.Section>
           <S.Title>{project.title}</S.Title>
-          <S.Image src={project.image} alt={project.title} />
-          <S.Description>{project.description}</S.Description>
+          <S.Image src={project.primaryImage} alt={project.title} />
+          <S.Description>{project.primaryDescription}</S.Description>
+        </S.Section>
+        <S.ImageTextSection>
+          <img src={project.image2} alt={project.title} />
+          <img src={project.image3} alt={project.title} />
+        </S.ImageTextSection>
+        <S.Section>
+          <S.Description>{project.description2}</S.Description>
         </S.Section>
       </Container>
     </>

@@ -9,12 +9,15 @@ import {
 import * as S from './styles';
 import { Container } from '../../styles/Container';
 import ImgLogoFooter from '../../assets/images/logo_cpp_footer.png';
+import { Link } from 'react-router';
 
 const Footer = () => {
   return (
     <S.Footer>
       <Container style={{ textAlign: 'left' }}>
-        <S.LogoFooter src={ImgLogoFooter} alt="logo CPP" />
+        <Link to="/">
+          <S.LogoFooter src={ImgLogoFooter} alt="logo CPP" />
+        </Link>
         <S.Linha />
         <S.ListContainer>
           <S.ListFooter>

@@ -12,9 +12,9 @@ const ProjectsSection = () => {
       <S.ProjectsSection>
         {projects.map((project) => (
           <S.Card key={project.id}>
-            <S.CardImage src={project.image} alt={project.title} />
+            <S.CardImage src={project.primaryImage} alt={project.title} />
             <h3>{project.title}</h3>
-            <p>{project.description}</p>
+            <p>{project.resumedDescription}</p>
             <S.CardButton to={`/projetos/${project.id}`}>
               Saiba mais
             </S.CardButton>

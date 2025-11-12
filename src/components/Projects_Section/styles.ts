@@ -5,6 +5,7 @@ import { Link } from 'react-router';
 export const ProjectsSection = styled.section`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  align-items: stretch;
   gap: 24px;
   padding: 32px 0;
   margin: 0 auto;
@@ -19,18 +20,22 @@ export const ProjectsSection = styled.section`
 `;
 
 export const Card = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
   background-color: ${Colors.white};
   border-radius: 12px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   transition: transform 0.3s ease-in-out;
 
   &:hover {
     transform: translateY(-4px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
 
   h3 {
+    font-family: 'Bebas Neue', sans-serif;
     font-size: 24px;
     margin-bottom: 16px;
     color: ${Colors.blue2};
@@ -41,6 +46,12 @@ export const Card = styled.div`
     padding: 0 16px;
     font-size: 16px;
     color: ${Colors.black};
+
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 `;
 
@@ -57,6 +68,7 @@ export const CardButton = styled(Link)`
   padding: 8px 16px;
   background-color: ${Colors.blue};
   color: ${Colors.white};
+  text-decoration: none;
   border: none;
   border-radius: 4px;
   font-size: 16px;

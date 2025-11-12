@@ -21,7 +21,7 @@ const Carousel = () => {
             <SwiperSlide key={idx}>
               <S.Image src={img.src} alt={`Slide ${idx}`} />
               <S.Overlay>
-                <Container>
+                <Container style={{ textAlign: 'left' }}>
                   <h2>{img.title}</h2>
                   <p>{img.description}</p>
                 </Container>
